@@ -663,7 +663,7 @@ proc main() =
     #processCategory(r, Category"megatest", p.cmdLineRest.string, testsDir, runJoinableTests = false)
 
     azure.start()
-    var myself = quoteShell(findExe("testament" / "tester"))
+    var myself = quoteShell(findExe("testament" / "testament"))
     if targetsStr.len > 0:
       myself &= " " & quoteShell("--targets:" & targetsStr)
 
